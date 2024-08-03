@@ -21,7 +21,7 @@ repository               : "academicpages/academicpages.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "burnley_headshot.jpeg"
+  avatar           : "profile.png"
   name             : "Ben Burnley"
   pronouns         : #"he/him"  
   bio              : "PhD Candidate, Georgetown University "
