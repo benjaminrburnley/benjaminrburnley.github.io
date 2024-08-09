@@ -20,6 +20,8 @@ Social Media + Society. (Forthcoming) [pdf]
 **Advise, Consent, and Tweet?: How Senators Talk About Supreme Court Nominations on Twitter**. 2024.
 Benjamin R. Burnley. [pdf] [code]
 
+
+## In Preparation
 **Tweeters and Leaders: How Members without Institutional Power Leverage Twitter to Gain Influence in Congress**. 
 Benjamin R. Burnley. (Part of Dissertation Project) [pdf] [code]
 
