@@ -10,9 +10,9 @@ My dissertation project looks at how members of Congress use Twitter (now X) to 
 
 # Publications
 
-Tang, Rongwei, Burnley, Benjamin, Vraga, Emily and Bode, Leticia. 2024. Corrective Democracy? The
-relationship between correction of misinformation on social media and connective democratic norms.
-Social Media + Society. (Forthcoming) [pdf]
+Tang, Rongwei, Burnley, Benjamin, Vraga, Emily and Bode, Leticia. 2024. 
+**Corrective Democracy? The relationship between correction of misinformation on social media and connective democratic norms**.
+*Social Media + Society.* (Forthcoming) [pdf]
 
 # Working Papers 
 
