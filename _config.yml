@@ -32,9 +32,9 @@ author:
 
   # Academic websites
   arxiv            : # URL - Update with the correct link to your profile
-  googlescholar    : "https://scholar.google.com/citations?hl=en&user=r7ueMwoAAAAJ"
+  googlescholar    : #"https://scholar.google.com/citations?hl=en&user=r7ueMwoAAAAJ"
   impactstory      : # URL
-  orcid            : "https://orcid.org/0009-0006-6611-3499"
+  orcid            : #"https://orcid.org/0009-0006-6611-3499"
   semantic         : # URL
   pubmed           : # URL 
   researchgate     : # URL
