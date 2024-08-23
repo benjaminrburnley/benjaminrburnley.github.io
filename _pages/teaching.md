@@ -35,7 +35,3 @@ Media Law, undergraduate, Fall 2018, Middle Tennessee State University, with Pau
 "Ben was incredible! His discussion section was always interesting yet informative. His knowledge on the research paper was especially helpful and he was available to meet when I had questions about it."
 
 Ben always validated differing opinions and supported all students equally.
-
-{% include carousel.html height="50" unit="%" duration="7" number="1" %}
-
-{% include carousel.html height="50" unit="%" duration="7" number="2" %}
