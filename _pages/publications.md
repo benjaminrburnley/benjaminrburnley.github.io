@@ -18,20 +18,20 @@ Tang, Rongwei, Burnley, Benjamin, Vraga, Emily and Bode, Leticia. 2024.
 
 ## Under Review
 **Advise, Consent, and Tweet?: How Senators Talk About Supreme Court Nominations on Twitter**. 2024.
-Benjamin R. Burnley. [pdf] [code](https://github.com/benjaminrburnley/advise_consent_tweet)
+Benjamin R. Burnley. [pdf](/files/advise_consent_tweet.pdf) [code](https://github.com/benjaminrburnley/advise_consent_tweet)
 
 
 ## In Preparation
 **Tweeters and Leaders: How Members without Institutional Power Leverage Twitter to Gain Influence in Congress**. 
-Benjamin R. Burnley. (Part of Dissertation Project) [pdf] [code](https://github.com/benjaminrburnley/dissertation)
+Benjamin R. Burnley. (Part of Dissertation Project) [pdf](/files/ch3_paper.pdf) [code](https://github.com/benjaminrburnley/dissertation) [slides](/files/ch3_slides.pdf)
 
 **Heading for the “X”-it?: How Congress is Navigating Changes in the Digital Communication**
-Landscape. Benjamin R. Burnley. Presented at MPSA 2024 (Part of Dissertation Project) [pdf]
+Landscape. Benjamin R. Burnley. Presented at MPSA 2024 (Part of Dissertation Project) [pdf](/files/ch2_paper.pdf) [slides](/files/ch2_slides.pdf)
 
 **Legislative Influencers: Content Creation, Engagement, and Social Media Activity in Congress**. 
 Benjamin R. Burnley. Presented at SPSA 2024 (Part of Dissertation Project). [pdf] [code](https://github.com/benjaminrburnley/dissertation)
 
-**Between War and Words** (With Ana Paula Pellegrino & Laia Balcells) [pdf]
+**Between War and Words** (With Ana Paula Pellegrino & Laia Balcells)
 
-**Analyzing 10 Years of Policy Tweets On Twitter** (With Annelise Russell) [pdf] [code](https://github.com/benjaminrburnley/policy_tweets_project)
+**Analyzing 10 Years of Policy Tweets On Twitter** (With Annelise Russell) [prelim](/files/descriptive_analysis_v1.html)[code](https://github.com/benjaminrburnley/policy_tweets_project)
 
