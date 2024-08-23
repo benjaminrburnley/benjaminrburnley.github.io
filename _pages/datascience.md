@@ -9,7 +9,7 @@ author_profile: true
 
 The Environmental Impact Data Collaborative (EIDC) enables researchers, community groups, and policymakers to analyze and visualize data in ways that help them make environmental policy more effective and just. This platform allows users to discover, access, merge, transform, analyze, visualize, and discuss hundreds of datasets with billions of rows of information. This project, funded in part by Bezos Earth Fund, is a collaboration between the Massive Data Institute at the McCourt School of Public Policy, Howard University, Morgan State University, and other Historically Black Colleges and Universities, and environmental justice think tanks and start-ups. 
 
-# Tutorial: Merge Census Data into Justice 40's CEJST
+### Tutorial: Merge Census Data into Justice 40's CEJST
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/qWXrVPz8r18?si=Ujdvc1-KHzMoKQCj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
