@@ -33,5 +33,5 @@ Benjamin R. Burnley. Presented at SPSA 2024 (Part of Dissertation Project). [pdf
 
 **Between War and Words** (With Ana Paula Pellegrino & Laia Balcells)
 
-**Analyzing 10 Years of Policy Tweets On Twitter** (With Annelise Russell) [prelim](/files/descriptive_analysis_v1.html)[code](https://github.com/benjaminrburnley/policy_tweets_project)
+**Analyzing 10 Years of Policy Tweets On Twitter** (With Annelise Russell) [prelim](/files/descriptive_analysis_v1.html) [code](https://github.com/benjaminrburnley/policy_tweets_project)
 
