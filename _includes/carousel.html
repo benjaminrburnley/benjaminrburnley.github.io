@@ -1,61 +1,219 @@
-<!-- Carousel container -->
-<div id="testimonialCarousel" class="carousel slide" data-ride="carousel">
+{% assign letterstring = "a,b,c,d,e,f,g,h,i,j,k,l,m,n" %}
+{% assign letters = letterstring | split: ',' %}
+{% assign number = include.number | minus: 1 %}
+<div class="carousel__holder">
+    <div id="carousel{{ number }}" class="carousel">
+        {% for item in page.carousels[number].images %}
+          <input class="carousel__activator" type="radio" name="carousel{{ number }}" id="{{ number }}{{ letters[forloop.index0] }}" {% if forloop.first %}checked="checked"{% endif %} />
+        {% endfor %}
+        {% for item in page.carousels[number].images %}
+          {% if forloop.index == forloop.length %}
+            {% assign nextindex = 0 %}
+          {% else %}
+            {% assign nextindex = forloop.index0 | plus: 1 %}
+          {% endif %}
+          {% assign nextletter = letters[nextindex] %}
+          {% if forloop.index0 == 0 %}
+            {% assign previndex = forloop.length | minus: 1 %}
+          {% else %}
+            {% assign previndex = forloop.index0 | minus: 1 %}
+          {% endif %}
+          {% assign prevletter = letters[previndex] %}
+          <div class="carousel__controls">
+              <label class="carousel__control carousel__control--backward" for="{{ number }}{{ prevletter }}"></label>
+              <label class="carousel__control carousel__control--forward" for="{{ number }}{{ nextletter }}"></label>
+          </div>
+        {% endfor %}
+        <div class="carousel__track">
+          <ul>
+            {% for item in page.carousels[number].images %}
+            <li class="carousel__slide" style="background-image: url('{{ item.image }}');"></li>
+            {% endfor %}
+          </ul>
+        </div>
+        <div class="carousel__indicators">
+            {% for item in page.carousels[number].images %}
+              <label class="carousel__indicator" for="{{ number }}{{ letters[forloop.index0] }}"></label>
+            {% endfor %}
+        </div>
+    </div>
+</div>
 
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-      <li data-target="#testimonialCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#testimonialCarousel" data-slide-to="1"></li>
-      <li data-target="#testimonialCarousel" data-slide-to="2"></li>
-      <li data-target="#testimonialCarousel" data-slide-to="3"></li>
-      <li data-target="#testimonialCarousel" data-slide-to="4"></li>
-    </ol>
-  
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner">
-  
-    <!-- First slide -->
-    <div class="item active">
-      <div class="testimonial">
-        <p>"Ben was incredibly generous with the time he carved out for his students and the help and guidance he offered us. Beyond being available for office hours on a weekly basis, he was accessible throughout the week. He explains tricky concepts with great clarity and practical applications, and also complements material taught in the classroom by showing us applications of concepts in R. Additionally, Ben made clear from an early point in the semester that he is available for his students as a resource, and provided students with guidance about the doctoral program and the political science discipline more broadly."</p>
-          <p><strong>- Jane Doe</strong></p>
-      </div>
-    </div>
-  
-    <!-- Second slide -->
-    <div class="item">
-      <div class="testimonial">
-        <p>"Ben demonstrated principles of equity and inclusion very well. He makes space for all of his students and also consistently demonstrated a willingness to meet students where they are at, meaning that he tailored his teaching and mentoring style to the unique learning and personal needs of students regardless of the level of skill or familiarity they had."</p>
-        <p><strong>- John Smith</strong></p>
-      </div>
-    </div>
-    </div>
-  
-    <!-- Fourth slide -->
-    <div class="item">
-      <div class="testimonial">
-        <p>"Ben was incredible! His discussion section was always interesting yet informative. His knowledge on the research paper was especially helpful and he was available to meet when I had questions about it."</p>
-        <p><strong>- Emily Johnson</strong></p>
-      </div>
-    </div>
-  
-    <!-- Fifth slide -->
-    <div class="item">
-      <div class="testimonial">
-        <p>"Ben always validated differing opinions and supported all students equally."</p>
-        <p><strong>- Emily Johnson</strong></p>
-      </div>
-    </div>
-  
-    </div>
-  
-    <!-- Left and right controls -->
-    <a class="left carousel-control" href="#testimonialCarousel" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#testimonialCarousel" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right"></span>
-      <span class="sr-only">Next</span>
-    </a>
-  
-  </div>
+<style>
+.carousel__holder {width: 100%; position: relative; padding-bottom: {{ include.height }}{{ include.unit }}; margin: 1rem 0 1rem;}
+.carousel {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+  position: absolute;
+  padding: 0;
+}
+.carousel__controls,
+.carousel__activator {
+  display: none;
+}
+{% for item in page.carousels[number].images %}
+.carousel__activator:nth-of-type({{ forloop.index }}):checked ~ .carousel__track {
+  -webkit-transform: translateX(-{{ forloop.index0 }}00%);
+          transform: translateX(-{{ forloop.index0 }}00%);
+}
+.carousel__activator:nth-of-type({{ forloop.index }}):checked ~ .carousel__slide:nth-of-type({{ forloop.index }}) {
+  transition: opacity 0.5s, -webkit-transform 0.5s;
+  transition: opacity 0.5s, transform 0.5s;
+  transition: opacity 0.5s, transform 0.5s, -webkit-transform 0.5s;
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+.carousel__activator:nth-of-type({{ forloop.index }}):checked ~ .carousel__controls:nth-of-type({{ forloop.index }}) {
+  display: block;
+  opacity: 1;
+}
+.carousel__activator:nth-of-type({{ forloop.index }}):checked ~ .carousel__indicators .carousel__indicator:nth-of-type({{ forloop.index }}) {
+  opacity: 1;
+}
+{% endfor %}
+
+.carousel__control {
+  height: 30px;
+  width: 30px;
+  margin-top: -15px;
+  top: 50%;
+  position: absolute;
+  display: block;
+  cursor: pointer;
+  border-width: 5px 5px 0 0;
+  border-style: solid;
+  border-color: #fafafa;
+  opacity: 0.35;
+  opacity: 1;
+  outline: 0;
+  z-index: 3;
+}
+.carousel__control:hover {
+  opacity: 1;
+}
+.carousel__control--backward {
+  left: 20px;
+  -webkit-transform: rotate(-135deg);
+          transform: rotate(-135deg);
+}
+.carousel__control--forward {
+  right: 20px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.carousel__indicators {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+}
+.carousel__indicator {
+  height: 15px;
+  width: 15px;
+  border-radius: 100%;
+  display: inline-block;
+  z-index: 2;
+  cursor: pointer;
+  opacity: 0.35;
+  margin: 0 2.5px 0 2.5px;
+}
+.carousel__indicator:hover {
+  opacity: 0.75;
+}
+.carousel__track {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 0;
+  margin: 0;
+  transition: -webkit-transform 0.5s ease 0s;
+  transition: transform 0.5s ease 0s;
+  transition: transform 0.5s ease 0s, -webkit-transform 0.5s ease 0s;
+}
+.carousel__track .carousel__slide {
+  display: block;
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: 1;
+}
+{% for item in page.carousels[number].images %}
+.carousel__track .carousel__slide:nth-of-type({{ forloop.index }}) {
+  -webkit-transform: translateX({{ forloop.index0 }}00%);
+          transform: translateX({{ forloop.index0 }}00%);
+}
+{% endfor %}
+
+.carousel--scale .carousel__slide {
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+.carousel__slide {
+  height: 100%;
+  position: absolute;
+  opacity: 0;
+  overflow: hidden;
+}
+.carousel__slide .overlay {height: 100%;}
+.carousel--thumb .carousel__indicator {
+  height: 30px;
+  width: 30px;
+}
+.carousel__indicator {
+  background-color: #fafafa;
+}
+{% for item in page.carousels[number].images %}
+.carousel__slide:nth-of-type({{ forloop.index }}),
+.carousel--thumb .carousel__indicators .carousel__indicator:nth-of-type({{ forloop.index }}) {
+  background-size: cover;
+  background-position: center;
+}
+{% endfor %}
+</style>
+
+<script>
+  function isVisible(el) {
+        while (el) {
+            if (el === document) {
+                return true;
+            }
+
+            var $style = window.getComputedStyle(el, null);
+
+            if (!el) {
+                return false;
+            } else if (!$style) {
+                return false;
+            } else if ($style.display === 'none') {
+                return false;
+            } else if ($style.visibility === 'hidden') {
+                return false;
+            } else if (+$style.opacity === 0) {
+                return false;
+            } else if (($style.display === 'block' || $style.display === 'inline-block') &&
+                $style.height === '0px' && $style.overflow === 'hidden') {
+                return false;
+            } else {
+                return $style.position === 'fixed' || isVisible(el.parentNode);
+            }
+        }
+  }
+  {% if include.duration %}
+  setInterval(function(){
+    var j=0;
+    var elements = document.querySelectorAll('#carousel{{ number}} .carousel__control--forward');
+    for(i=(elements.length - 1);i>-1;i--) {
+      if(isVisible(elements[i])) j=i;
+    }
+    elements[j].click();
+  },{{ include.duration }}000);
+  {% endif %}
+</script>
