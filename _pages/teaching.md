@@ -1,17 +1,17 @@
 ---
 layout: archive
-title: "Teaching"
+title: ""
 permalink: /teaching/
 author_profile: true
 ---
 
 # [Introduction to Quantitative Methods](https://github.com/benjaminrburnley/intro_to_quant_methods)
 
-This repository holds the scripts for a semester-long course that introduces students to quantitative methods for political science. This course is for students with minimal experience with statistics and who have yet to gain experience with coding. The course is written in R and uses RMarkdown notebooks to take students from basic tasks like importing and summarizing data through multiple regression with interaction effects. Many scripts utilize simulations to teach intuition behind statistical concepts while demonstrating what is possible with computational methods. Throughout the course, students will learn to visualize data and results with ggplot2. This course is geared toward first semster PhD students but can be adapted for advanced undergraduates and masters students. 
 
-# Courses
+This repository holds the scripts for a semester-long course that introduces students to quantitative methods for political science. This course is for students with minimal experience with statistics and who have yet to gain experience with coding. The course is written in R and uses RMarkdown notebooks to take students from basic tasks like importing and summarizing data through multiple regression with interaction effects. Many scripts utilize simulations to teach intuition behind statistical concepts while demonstrating what is possible with computational methods. Throughout the course, students will learn to visualize data and results with ggplot2. This course is geared toward first semster PhD students but can be adapted for advanced undergraduates and masters students. This was developed as part of the lab curriculum I taught when serving as teaching assistant for Quantitative Methods I with Hans Noel.
 
-## Teaching Assistant 
+# Teaching Experience
+
 Quantitative Methods III (Causal Inference), PhD, Spring 2023, Georgetown University, with Marko Klašnja 
 
 Quantitative Methods I (Intro), PhD, Fall 2022, Georgetown University, with Hans Noel 
@@ -34,4 +34,4 @@ Media Law, undergraduate, Fall 2018, Middle Tennessee State University, with Pau
 
 "Ben was incredible! His discussion section was always interesting yet informative. His knowledge on the research paper was especially helpful and he was available to meet when I had questions about it."
 
-Ben always validated differing opinions and supported all students equally.
+"Ben always validated differing opinions and supported all students equally."
