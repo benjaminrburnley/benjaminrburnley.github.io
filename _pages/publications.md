@@ -26,10 +26,10 @@ Benjamin R. Burnley. [pdf](/files/advise_consent_tweet.pdf) [code](https://githu
 Benjamin R. Burnley. Presented at APSA 2024 (Part of Dissertation Project) [pdf] [code](https://github.com/benjaminrburnley/dissertation)
 
 **Heading for the “X”-it?: How Congress is Navigating Changes in the Digital Communication**
-Landscape. Benjamin R. Burnley. Presented at MPSA 2024 (Part of Dissertation Project) [pdf](/files/ch2_paper.pdf) [slides](/files/ch2_slides.pdf)
+Landscape. Benjamin R. Burnley. Presented at MPSA 2024 (Part of Dissertation Project) [pdf](/files/ch3_paper.pdf) [slides](/files/ch3_slides.pdf)
 
 **Legislative Influencers: Content Creation, Engagement, and Social Media Activity in Congress**. 
-Benjamin R. Burnley. Presented at SPSA 2024 (Part of Dissertation Project). [pdf](/files/ch3_paper.pdf) [code](https://github.com/benjaminrburnley/dissertation) [slides](/files/ch3_slides.pdf)
+Benjamin R. Burnley. Presented at SPSA 2024 (Part of Dissertation Project). [pdf](/files/ch2_paper.pdf) [code](https://github.com/benjaminrburnley/dissertation) [slides](/files/ch2_slides.pdf)
 
 **Between War and Words** (With Ana Paula Pellegrino & Laia Balcells)
 
