@@ -21,7 +21,8 @@ Tang, R., Burnley, B., & Vraga, E.K. (2025). From Engagement to Extremism: Socia
 
 External Threats and Internal Risks: How International Wars Shape Leaders' Discourse in Third-Party Countries. *With Ana Paula Pellegrino & Laia Balcells*
 
-Analyzing 10 Years of Policy Tweets On Twitter with Annelise Russell
+Analyzing 10 Years of Policy Tweets On Twitter *with Annelise Russell*
+
 Leading (or Following) The Headlines?: News Attention and Congressional Twitter
 Activity. *With Matthew Hitt.* (Presented At APSA 2025)
 
