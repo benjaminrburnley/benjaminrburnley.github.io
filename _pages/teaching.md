@@ -12,6 +12,10 @@ This repository holds the scripts for a semester-long course that introduces stu
 
 # Teaching Experience
 
+Intro to American Government and Politics, Fall 2025, Colorado State University
+
+Media and Politics, Fall 2025, Colorado State University
+
 Quantitative Methods III (Causal Inference), PhD, Spring 2023, Georgetown University, with Marko Klašnja 
 
 Quantitative Methods I (Intro), PhD, Fall 2022, Georgetown University, with Hans Noel 
